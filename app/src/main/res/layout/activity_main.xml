@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:orientation="vertical"
+        app:behavior_peekHeight="50dp"
+        android:id="@+id/bottom_sheet"
+        android:background="#2196f3"
+        app:layout_behavior="@string/bottom_sheet_behavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/toolbar"
+            android:background="#1976d2"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="^"
+                    android:textSize="40sp" />
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/toolbar"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="22dp"
+                android:textStyle="bold"
+                android:text="Select Notification Level Priority"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/imageLayout"
+                android:layout_height="50dp"
+                android:layout_below="@+id/textView"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="horizontal"
+                >
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/one"
+                android:layout_marginLeft="10dp"
+                app:civ_border_color="#EEEEEE"
+                app:civ_border_width="4dp"
+                app:civ_shadow_radius="10"
+                app:civ_shadow_color="#8BC34A"
+                />
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/one"
+                    android:layout_marginLeft="10dp"
+                    app:civ_border_color="#EEEEEE"
+                    app:civ_border_width="4dp"
+                    app:civ_shadow_radius="10"
+                    app:civ_shadow_color="#8BC34A"
+                    />
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/one"
+                    android:layout_marginLeft="10dp"
+                    app:civ_border_color="#EEEEEE"
+                    app:civ_border_width="4dp"
+                    app:civ_shadow_radius="10"
+                    app:civ_shadow_color="#8BC34A"
+                    />
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/one"
+                    android:layout_marginLeft="10dp"
+                    app:civ_border_color="#EEEEEE"
+                    app:civ_border_width="4dp"
+                    app:civ_shadow_radius="10"
+                    app:civ_shadow_color="#8BC34A"
+                    />
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/one"
+                    android:layout_marginLeft="10dp"
+                    app:civ_border_color="#EEEEEE"
+                    app:civ_border_width="4dp"
+                    app:civ_shadow_radius="10"
+                    app:civ_shadow_color="#8BC34A"
+                    />
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/one"
+                    android:layout_marginLeft="10dp"
+                    app:civ_border_color="#EEEEEE"
+                    app:civ_border_width="4dp"
+                    app:civ_shadow_radius="10"
+                    app:civ_shadow_color="#8BC34A"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageLayout"
+                android:layout_marginTop="15dp"
+                android:textSize="12sp"
+                android:layout_centerHorizontal="true"
+                android:text="No full screen interruption, peeking, sound or vibrate."
+                android:textColor="@android:color/white" />
+
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>
+
